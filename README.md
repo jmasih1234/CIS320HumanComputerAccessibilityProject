@@ -1,2 +1,2 @@
 # CIS320HumanComputerAccessibilityProject
-This project will serve as a semester long effort to create a web-cam tracking software. The purpose is to test different ways for a person to interact with their personal computer or phone, using a different interface, beyond the standard touch interfaces such as a mouse, mousepad, or keyboard; instead we will use retinal tracking. 
+With HouseHub, users can view assigned chores, track household finances, see who will be home and when, leave notes, and stay organized—all in one place. It’s the ultimate tool for a smoother, more harmonious shared living experience.
