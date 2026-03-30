@@ -47,30 +47,15 @@ npm run build:ios
 
 This produces a `swift/HouseHub/WebApp/` folder containing the compiled site (this folder is git-ignored since it is a build artifact).
 
-#### 2. Create the Xcode project (first time only)
+#### 2. Open in Xcode
 
-1. Open Xcode → **File → New → Project**.
-2. Choose **iOS → App**, then click **Next**.
-3. Fill in:
-   - **Product Name:** `HouseHub`
-   - **Bundle Identifier:** `com.yourteam.HouseHub` (or any reverse-domain ID you prefer)
-   - **Interface:** SwiftUI
-   - **Language:** Swift
-4. Choose the `swift/` directory as the save location and uncheck **Create Git repository** (git is already set up).
-5. Delete the files Xcode generated (`ContentView.swift`, `Item.swift`, the app entry point) and instead **drag the existing files** from `swift/HouseHub/` into the Xcode project navigator:
-   - `HouseHubApp.swift`
-   - `ContentView.swift`
-   - `WebView.swift`
-   - `Assets.xcassets`
-   - `Preview Content/`
-6. **Add the `WebApp` folder as a folder reference** (not a group):
-   - In the project navigator, right-click the `HouseHub` target folder.
-   - Choose **Add Files to "HouseHub"**.
-   - Select `swift/HouseHub/WebApp`, make sure **Create folder references** is selected (blue folder icon), and check the app target.
+Open `swift/HouseHub.xcodeproj` in Xcode (double-click it in Finder, or run `open swift/HouseHub.xcodeproj` from the repo root). The project is pre-configured — no manual setup required.
 
 #### 3. Build and run
 
 Select a simulator or device in Xcode and press **⌘R**. The app will load the full HouseHub interface from the bundle.
+
+To see a live preview in the Xcode Canvas, open `ContentView.swift` and click **Resume** in the Canvas panel (or press **⌥⌘↩**). The preview renders the app using the built `WebApp` bundle.
 
 ### Rebuilding after web changes
 
