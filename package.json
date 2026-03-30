@@ -7,6 +7,7 @@
     "dev": "vite",
     "web": "vite --open",
     "build": "tsc -b && vite build",
+    "build:ios": "npm run build && rm -rf swift/HouseHub/WebApp && cp -r dist swift/HouseHub/WebApp",
     "lint": "eslint .",
     "preview": "vite preview"
   },
